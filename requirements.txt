@@ -1,0 +1,16 @@
+# 核心依赖
+mcp>=1.10,<2            # FastMCP v1 API；mcp 2.x 会破坏本项目
+requests>=2.31
+beautifulsoup4>=4.12
+markdownify>=0.11
+ddgs>=9.0               # DuckDuckGo 后端（模块名 ddgs）
+curl_cffi>=0.7          # twitter_search 的 cookie 后端（模拟 Chrome TLS）
+websockets>=13          # CDP：连接已登录浏览器执行 JS
+playwright>=1.40        # 浏览器渲染回退；需再执行 `playwright install chromium`
+
+# 可选（缺失时相关能力自动降级，不影响启动）
+crawl4ai>=0.4           # 反爬回退链首选：本地渲染
+                        # （Firecrawl 走 HTTP API，无需 SDK，只需 FIRECRAWL_API_KEY）
+
+# 开发/测试
+pytest>=8.0

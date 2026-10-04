@@ -1,0 +1,23 @@
+# 凭据与本机配置（只提交 .env.example，绝不提交真实值）
+.env
+.env.*
+!.env.example
+
+# 运行时缓存与产物
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.log
+wsl_install_log.txt
+
+# 虚拟环境
+venv/
+.venv/
+
+# IDE / 系统
+.idea/
+.vscode/
+Thumbs.db
+nul
