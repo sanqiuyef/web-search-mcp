@@ -7,6 +7,10 @@ web-search-server/
 ├── server.py                 # MCP 入口：注册全部工具、线程池与超时保护、输出格式化
 ├── README.md                 # 项目说明与 Twitter(X) 接入配置
 ├── FOLDER_STRUCTURE.md       # 本文件
+├── LICENSE                   # MIT
+├── requirements.txt          # 依赖（含可选依赖说明）
+├── .env.example              # 环境变量示例（真实值放本机 env 或 .env，不入库）
+├── .gitignore                # 排除凭据、缓存与虚拟环境
 ├── .cache/                   # 运行时磁盘缓存（如 x_api.json：queryId/features，非凭据）
 ├── src/
 │   ├── config.py             # 全部配置与环境变量（含 X_AUTH_TOKEN/X_CT0 读取处）
